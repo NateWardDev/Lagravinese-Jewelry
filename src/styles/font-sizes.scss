@@ -27,12 +27,12 @@ h4 {
 header {
   &.home {
     h1 {
-      font-size: clamp(4rem, 8vw, 8rem);
+      font-size: clamp(3rem, 8vw, 8rem);
       line-height: 0.9;
     }
 
     h2 {
-      font-size: clamp(3rem, 5vw, 5rem);
+      font-size: clamp(2rem, 5vw, 5rem);
       line-height: 1;
     }
   }
@@ -41,7 +41,7 @@ header {
   &.work,
   &.inquiries {
     h1 {
-      font-size: clamp(3.5rem, 6vw, 6rem);
+      font-size: clamp(2rem, 6vw, 6rem);
       line-height: 1;
     }
 
