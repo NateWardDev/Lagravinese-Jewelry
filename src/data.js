@@ -1,4 +1,4 @@
-import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaArrowRight } from "react-icons/fa";
 
 export const navLinks = [
   {
@@ -128,6 +128,15 @@ export const headerData = [
   },
 ];
 
+import test1Head from "../public/images/eng-placeholder1.jpeg";
+import test2Head from "../public/images/eng-placeholder2.jpeg";
+import test3Head from "../public/images/eng-placeholder3.jpeg";
+import test4Head from "../public/images/eng-placeholder4.jpeg";
+import test1Background from "../public/images/ring-test-placeholder1.webp";
+import test2Background from "../public/images/ring-test-placeholder2.webp";
+import test3Background from "../public/images/ring-test-placeholder3.jpg";
+import test4Background from "../public/images/ring-test-placeholder4.jpeg";
+
 // Home testimonials Section
 export const testimonialsData = {
   heading: "Kind Words from Our Clients",
@@ -135,10 +144,10 @@ export const testimonialsData = {
   testimonials: [
     {
       id: 1,
-      clientImage: "images/eng-placeholder1.jpeg",
+      clientImage: test1Head,
       clientImageAlt: "Engagement photo of Ethan & Jackie",
 
-      jewelryImage: "images/ring-test-placeholder1.webp",
+      jewelryImage: test1Background,
       jewelryImageAlt: "Custom engagement ring",
 
       testimonial:
@@ -149,10 +158,10 @@ export const testimonialsData = {
 
     {
       id: 2,
-      clientImage: "images/eng-placeholder2.jpeg",
+      clientImage: test2Head,
       clientImageAlt: "Engagement photo of Ethan & Jackie",
 
-      jewelryImage: "images/ring-test-placeholder2.webp",
+      jewelryImage: test2Background,
       jewelryImageAlt: "Custom engagement ring",
 
       testimonial:
@@ -163,10 +172,10 @@ export const testimonialsData = {
 
     {
       id: 3,
-      clientImage: "images/eng-placeholder3.jpeg",
+      clientImage: test3Head,
       clientImageAlt: "Engagement photo of Ethan & Jackie",
 
-      jewelryImage: "images/ring-test-placeholder3.jpg",
+      jewelryImage: test3Background,
       jewelryImageAlt: "Custom engagement ring",
 
       testimonial:
@@ -177,10 +186,10 @@ export const testimonialsData = {
 
     {
       id: 4,
-      clientImage: "images/eng-placeholder4.jpeg",
+      clientImage: test4Head,
       clientImageAlt: "Engagement photo of Ethan & Jackie",
 
-      jewelryImage: "images/ring-test-placeholder4.jpeg",
+      jewelryImage: test4Background,
       jewelryImageAlt: "Custom engagement ring",
 
       testimonial:
@@ -282,7 +291,26 @@ export const homeAboutData = {
 // home collections section
 export const collections = {
   header: "What We Create",
+  icon: FaArrowRight,
   items: [
+    {
+      title: "Engagement Rings",
+      image: "/images/engagement-ring-placeholder.jpg",
+      alt: "Custom engagement ring",
+      link: "/collections/custom-engagement-rings",
+    },
+    {
+      title: "Wedding Bands",
+      image: "/images/wedding-band-placeholder.jpg",
+      alt: "Wedding bands",
+      link: "/collections/wedding-bands",
+    },
+    {
+      title: "Anniversary Rings",
+      image: "/images/anniversary-ring-placeholder.jpg",
+      alt: "Anniversary ring",
+      link: "/collections/anniversary-rings",
+    },
     {
       title: "Necklaces",
       image: "/images/necklace-placeholder.png",
@@ -290,22 +318,10 @@ export const collections = {
       link: "/collections/necklaces",
     },
     {
-      title: "Rings",
-      image: "/images/ring-placeholder.png",
-      alt: "Custom ring",
-      link: "/collections/rings",
-    },
-    {
       title: "Earrings",
-      image: "/images/earing-placeholder.png",
+      image: "/images/earring-placeholder.png",
       alt: "Custom earrings",
       link: "/collections/earrings",
-    },
-    {
-      title: "Bands",
-      image: "/images/band-placeholder.jpeg",
-      alt: "Wedding bands",
-      link: "/collections/bands",
     },
     {
       title: "Bracelets",
@@ -313,9 +329,139 @@ export const collections = {
       alt: "Custom bracelet",
       link: "/collections/bracelets",
     },
+    {
+      title: "Pendants",
+      image: "/images/pendant-placeholder.jpg",
+      alt: "Custom pendant",
+      link: "/collections/pendants",
+    },
   ],
 };
 
+//inquiries/ contact
+export const contactForm = {
+  title: "Request Information",
+  description:
+    "Tell us about your jewelry needs and we'll contact you to discuss your project or service.",
+
+  fields: {
+    firstName: {
+      label: "First Name",
+      placeholder: "John",
+    },
+    lastName: {
+      label: "Last Name",
+      placeholder: "Doe",
+    },
+    email: {
+      label: "Email Address",
+      placeholder: "john@example.com",
+    },
+    phone: {
+      label: "Phone Number",
+      placeholder: "(555) 123-4567",
+    },
+    interest: {
+      label: "Product or Service",
+      placeholder: "Select an option",
+    },
+    attachments: {
+      label: "Inspiration Photos or Attachments",
+      helper:
+        "Upload inspiration photos, sketches, or images of your existing jewelry. You may select multiple files.",
+    },
+    message: {
+      label: "Tell Us About Your Project",
+      placeholder:
+        "Describe your project, preferred metals, gemstones, timeline, or any questions you have.",
+    },
+  },
+
+  productOptions: [
+    { id: 0, label: "Custom Engagement Rings" },
+    { id: 1, label: "Wedding Bands" },
+    { id: 2, label: "Anniversary Rings" },
+    { id: 3, label: "Necklaces" },
+    { id: 4, label: "Earrings" },
+    { id: 5, label: "Bracelets" },
+    { id: 6, label: "Pendants" },
+    { id: 7, label: "Fine Gold & Platinum Jewelry" },
+  ],
+
+  serviceOptions: [
+    { id: 8, label: "Professional Jewelry Appraisals" },
+    { id: 9, label: "Heirloom Redesigns & Remounts" },
+    { id: 10, label: "Stone Replacement & Resetting" },
+    { id: 11, label: "Custom Jewelry Design" },
+  ],
+
+  submitText: "Send Request",
+
+  images: [
+    {
+      id: 0,
+      src: homeImage1,
+      alt: "Gallery image 1",
+    },
+    {
+      id: 1,
+      src: test1Background,
+      alt: "Gallery image 2",
+    },
+    {
+      id: 2,
+      src: test2Background,
+      alt: "Gallery image 3",
+    },
+    {
+      id: 3,
+      src: test3Background,
+      alt: "Gallery image 4",
+    },
+    {
+      id: 4,
+      src: test4Background,
+      alt: "Gallery image 5",
+    },
+    {
+      id: 5,
+      src: test1Head,
+      alt: "Gallery image 6",
+    },
+    {
+      id: 6,
+      src: test1Head,
+      alt: "Gallery image 7",
+    },
+    {
+      id: 7,
+      src: test1Head,
+      alt: "Gallery image 8",
+    },
+    {
+      id: 8,
+      src: test1Head,
+      alt: "Gallery image 9",
+    },
+    {
+      id: 9,
+      src: test1Head,
+      alt: "Gallery image 10",
+    },
+    {
+      id: 10,
+      src: test1Head,
+      alt: "Gallery image 11",
+    },
+    {
+      id: 11,
+      src: test1Head,
+      alt: "Gallery image 12",
+    },
+  ],
+};
+
+// faq on inquiries page
 export const faqData = [
   {
     category: "Orders & Custom Design",

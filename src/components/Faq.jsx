@@ -3,7 +3,7 @@ import { faqData } from "../data";
 
 export default function FAQ() {
   const [activeCategory, setActiveCategory] = useState(0);
-  const [activeQuestion, setActiveQuestion] = useState(0);
+  const [activeQuestion, setActiveQuestion] = useState(-1);
 
   const current = faqData[activeCategory];
 
@@ -23,7 +23,7 @@ export default function FAQ() {
                 className={activeCategory === index ? "active" : ""}
                 onClick={() => {
                   setActiveCategory(index);
-                  setActiveQuestion(0);
+                  setActiveQuestion(-1);
                 }}
               >
                 {item.category}
@@ -36,7 +36,7 @@ export default function FAQ() {
             {current.questions.map((item, index) => (
               <div className="faq-item" key={item.question}>
                 <button
-                  className="faq-question"
+                  className={`faq-question ${activeQuestion === index ? "active" : ""}`}
                   onClick={() =>
                     setActiveQuestion(activeQuestion === index ? -1 : index)
                   }
