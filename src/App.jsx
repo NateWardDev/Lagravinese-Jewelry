@@ -3,7 +3,7 @@ import { useLocation } from "react-router";
 import "./styles/reset.scss";
 import "./styles/main.scss";
 import "./styles/font-sizes.scss";
-import { Routes, Route, BrowserRouter } from "react-router";
+import { Routes, Route } from "react-router";
 import OurWorkPage from "./pages/OurWorkPage";
 import HomePage from "./pages/HomePage";
 import JourneyPage from "./pages/JourneyPage";
@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
       <Topnav />
       <Header />
@@ -25,7 +25,7 @@ function App() {
         <Route path="/inquiries" element={<InquiriesPage />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

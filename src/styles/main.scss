@@ -452,7 +452,7 @@ header {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: end;
       position: absolute;
       bottom: 0;
       color: var(--white);
@@ -461,6 +461,7 @@ header {
       overflow: hidden;
       h3 {
         padding-left: 1rem;
+        margin: auto 0;
       }
     }
     .img-wrapper {
@@ -1275,6 +1276,7 @@ footer {
 
   .collections-mobile {
     .cards-container {
+      gap: 1rem;
       .card {
         width: 100%;
       }
@@ -1290,6 +1292,28 @@ footer {
 
         gap: 0.75rem;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  // padding
+  section {
+    padding: 0 0.75rem;
+    margin-bottom: 5rem;
+    h2 {
+      padding-bottom: 0.75rem;
+    }
+    &.about {
+      padding: 5rem 0.75rem;
+    }
+    &.testimonials {
+      h2 {
+        padding-bottom: 0rem;
+      }
+    }
+    &.inquiries-section {
+      padding: 0 0.75rem;
     }
   }
 }

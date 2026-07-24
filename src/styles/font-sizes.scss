@@ -1,11 +1,12 @@
-h1 {
-  font-size: 8rem;
-  line-height: 6rem;
-}
 h2 {
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  line-height: 1;
 }
+h3 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1;
+}
+
 a,
 p {
   font-size: 1.5rem;
@@ -13,12 +14,8 @@ p {
 .page-link {
   font-size: 1.25rem;
 }
-h2 {
-  font-size: 3rem;
-}
-h3,
 .faq button {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 h4 {
   font-size: 1.75rem;
@@ -27,8 +24,8 @@ h4 {
 header {
   &.home {
     h1 {
-      font-size: clamp(3rem, 8vw, 8rem);
-      line-height: 0.9;
+      font-size: clamp(3.5rem, 8vw, 8rem);
+      line-height: 1.2;
     }
 
     h2 {
@@ -41,13 +38,13 @@ header {
   &.work,
   &.inquiries {
     h1 {
-      font-size: clamp(2rem, 6vw, 6rem);
-      line-height: 1;
+      font-size: clamp(3rem, 6vw, 6rem);
+      line-height: 1.2;
     }
 
     h2 {
-      font-size: clamp(2rem, 3vw, 3rem);
-      line-height: 1.2;
+      font-size: clamp(1.75rem, 3vw, 3rem);
+      line-height: 1;
     }
   }
 }

@@ -25,7 +25,7 @@ const TestimonialsHome = () => {
             <div className="text-wrapper">
               <p className="text">{testimonial.testimonial}</p>
 
-              <p className="names">{testimonial.clientNames}</p>
+              <p className="names">~{testimonial.clientNames}</p>
             </div>
           </div>
         ))}
