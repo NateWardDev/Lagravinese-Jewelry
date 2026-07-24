@@ -205,6 +205,10 @@ export const testimonialsData = {
 };
 
 // Home Process Section
+import contactImage1 from "/images/proc1.jpg";
+import contactImage2 from "/images/proc2.jpeg";
+import contactImage3 from "/images/proc3.webp";
+import contactImage4 from "/images/proc4.webp";
 export const homeContactData = {
   heading: "Let's Bring Your Vision to Life",
 
@@ -244,34 +248,35 @@ export const homeContactData = {
     {
       id: 1,
       className: "img1",
-      src: "images/proc1.jpg",
+      src: contactImage1,
       alt: "Jewelry consultation",
     },
     {
       id: 2,
       className: "img2",
-      src: "images/proc2.jpeg",
+      src: contactImage2,
       alt: "Jewelry design rendering",
     },
     {
       id: 3,
       className: "img3",
-      src: "images/proc3.webp",
+      src: contactImage3,
       alt: "Jewelry craftsmanship",
     },
     {
       id: 4,
       className: "img4",
-      src: "images/proc4.webp",
+      src: contactImage4,
       alt: "Completed custom jewelry",
     },
   ],
 };
 
 // home About section
+import homeAboutPhoto from "/images/siblings.jpg";
 export const homeAboutData = {
   image: {
-    src: "images/siblings.jpg",
+    src: homeAboutPhoto,
     alt: "The LaGravinese family",
   },
 

@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 import "./styles/reset.scss";
 import "./styles/main.scss";
 import { Routes, Route, BrowserRouter } from "react-router";
@@ -12,6 +14,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Topnav />
       <Header />
       <Routes>
@@ -24,5 +27,15 @@ function App() {
     </BrowserRouter>
   );
 }
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, [pathname]);
+
+  return null;
+};
 
 export default App;
