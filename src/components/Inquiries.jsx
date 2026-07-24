@@ -17,8 +17,9 @@ const Inquiries = () => {
         start: "top top",
         end: "bottom bottom",
         pin: imageRef.current,
+        pinSpacing: true,
         invalidateOnRefresh: true,
-        markers: true,
+        anticipatePin: 1,
       });
     }, sectionRef);
 

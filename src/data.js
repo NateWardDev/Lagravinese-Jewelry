@@ -56,14 +56,18 @@ export const footerData = [
     ],
   },
   {
-    id: "newsletter",
-    heading: "Join Our Newsletter",
-    input: {
-      type: "email",
-      placeholder: "Email Address",
-      ariaLabel: "Email Address",
-    },
-    buttonText: "Subscribe",
+    id: "legal",
+    heading: "Other Links",
+    links: [
+      {
+        linkName: "Privacy Policy",
+        linkPath: "/privacy-policy",
+      },
+      {
+        linkName: "FAQ",
+        linkPath: "inquiries#faq",
+      },
+    ],
   },
   {
     id: "social",
@@ -84,14 +88,14 @@ export const footerData = [
 ];
 
 // images for headers
-import homeImage1 from "../public/images/greenCoat.jpeg";
-import homeImage2 from "../public/images/cosmos.jpeg";
-import journeyImage1 from "../public/images/greenCoat.jpeg";
-import journeyImage2 from "../public/images/cosmos.jpeg";
-import workImage1 from "../public/images/greenCoat.jpeg";
-import workImage2 from "../public/images/cosmos.jpeg";
-import inquiriesImage1 from "../public/images/greenCoat.jpeg";
-import inquiriesImage2 from "../public/images/cosmos.jpeg";
+import homeImage1 from "/images/greenCoat.jpeg";
+import homeImage2 from "/images/cosmos.jpeg";
+import journeyImage1 from "/images/greenCoat.jpeg";
+import journeyImage2 from "/images/cosmos.jpeg";
+import workImage1 from "/images/greenCoat.jpeg";
+import workImage2 from "/images/cosmos.jpeg";
+import inquiriesImage1 from "/images/greenCoat.jpeg";
+import inquiriesImage2 from "/images/cosmos.jpeg";
 
 export const headerData = [
   {
@@ -128,14 +132,14 @@ export const headerData = [
   },
 ];
 
-import test1Head from "../public/images/eng-placeholder1.jpeg";
-import test2Head from "../public/images/eng-placeholder2.jpeg";
-import test3Head from "../public/images/eng-placeholder3.jpeg";
-import test4Head from "../public/images/eng-placeholder4.jpeg";
-import test1Background from "../public/images/ring-test-placeholder1.webp";
-import test2Background from "../public/images/ring-test-placeholder2.webp";
-import test3Background from "../public/images/ring-test-placeholder3.jpg";
-import test4Background from "../public/images/ring-test-placeholder4.jpeg";
+import test1Head from "/images/eng-placeholder1.jpeg";
+import test2Head from "/images/eng-placeholder2.jpeg";
+import test3Head from "/images/eng-placeholder3.jpeg";
+import test4Head from "/images/eng-placeholder4.jpeg";
+import test1Background from "/images/ring-test-placeholder1.webp";
+import test2Background from "/images/ring-test-placeholder2.webp";
+import test3Background from "/images/ring-test-placeholder3.jpg";
+import test4Background from "/images/ring-test-placeholder4.jpeg";
 
 // Home testimonials Section
 export const testimonialsData = {
@@ -289,49 +293,57 @@ export const homeAboutData = {
 };
 
 // home collections section
+import engagementRings from "/images/ring-test-placeholder1.webp";
+import weddingBands from "/images/ring-test-placeholder2.webp";
+import anniversaryRings from "/images/ring-test-placeholder3.jpg";
+import necklaces from "/images/necklace-placeholder.png";
+import earrings from "/images/earing-placeholder.png";
+import bracelets from "/images/bracelet-placeholder.jpg";
+import pendants from "/images/pendant.jpeg";
+
 export const collections = {
   header: "What We Create",
   icon: FaArrowRight,
   items: [
     {
       title: "Engagement Rings",
-      image: "/images/engagement-ring-placeholder.jpg",
+      image: engagementRings,
       alt: "Custom engagement ring",
       link: "/collections/custom-engagement-rings",
     },
     {
       title: "Wedding Bands",
-      image: "/images/wedding-band-placeholder.jpg",
+      image: weddingBands,
       alt: "Wedding bands",
       link: "/collections/wedding-bands",
     },
     {
       title: "Anniversary Rings",
-      image: "/images/anniversary-ring-placeholder.jpg",
+      image: anniversaryRings,
       alt: "Anniversary ring",
       link: "/collections/anniversary-rings",
     },
     {
       title: "Necklaces",
-      image: "/images/necklace-placeholder.png",
+      image: necklaces,
       alt: "Custom necklace",
       link: "/collections/necklaces",
     },
     {
       title: "Earrings",
-      image: "/images/earring-placeholder.png",
+      image: earrings,
       alt: "Custom earrings",
       link: "/collections/earrings",
     },
     {
       title: "Bracelets",
-      image: "/images/bracelet-placeholder.jpg",
+      image: bracelets,
       alt: "Custom bracelet",
       link: "/collections/bracelets",
     },
     {
       title: "Pendants",
-      image: "/images/pendant-placeholder.jpg",
+      image: pendants,
       alt: "Custom pendant",
       link: "/collections/pendants",
     },
@@ -400,37 +412,37 @@ export const contactForm = {
   images: [
     {
       id: 0,
-      src: homeImage1,
+      src: engagementRings,
       alt: "Gallery image 1",
     },
     {
       id: 1,
-      src: test1Background,
+      src: weddingBands,
       alt: "Gallery image 2",
     },
     {
       id: 2,
-      src: test2Background,
+      src: anniversaryRings,
       alt: "Gallery image 3",
     },
     {
       id: 3,
-      src: test3Background,
+      src: necklaces,
       alt: "Gallery image 4",
     },
     {
       id: 4,
-      src: test4Background,
+      src: earrings,
       alt: "Gallery image 5",
     },
     {
       id: 5,
-      src: test1Head,
+      src: bracelets,
       alt: "Gallery image 6",
     },
     {
       id: 6,
-      src: test1Head,
+      src: pendants,
       alt: "Gallery image 7",
     },
     {

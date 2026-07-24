@@ -23,20 +23,19 @@ const Footer = () => {
                 </>
               )}
 
-              {section.id === "newsletter" && (
+              {section.id === "legal" && (
                 <>
                   <h3>{section.heading}</h3>
 
-                  <form>
-                    <input
-                      type={section.input}
-                      placeholder={section.placeholder}
-                      // aria-label={section}
-                      required
-                    />
-
-                    <button type="submit">{section.buttonText}</button>
-                  </form>
+                  <nav>
+                    <ul>
+                      {section.links.map((link) => (
+                        <li key={link.linkName}>
+                          <a href={link.linkPath}>{link.linkName}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  </nav>
                 </>
               )}
 
@@ -44,7 +43,7 @@ const Footer = () => {
                 <div className="social-links">
                   <h3>{section.heading}</h3>
 
-                  {/* <ul>
+                  <ul>
                     {section.links.map((social) => {
                       const Icon = social.icon;
 
@@ -60,11 +59,22 @@ const Footer = () => {
                         </li>
                       );
                     })}
-                  </ul> */}
+                  </ul>
                 </div>
               )}
             </div>
           ))}
+          <div className="footer-bottom">
+            <p>
+              &copy; {new Date().getFullYear()} LaGravinese Jewelry. All rights
+              reserved.
+            </p>
+
+            <p>
+              Website by{" "}
+              <a href="https://narleywebstudios.com">Narley Web Studios</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
