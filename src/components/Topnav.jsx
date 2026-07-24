@@ -50,9 +50,9 @@ const Topnav = () => {
       >
         {/* mobile ham menu & logo */}
         <div className="mobile-container">
-          <div className="logo">
-            <img src="images/logo-small.png" alt="LaGravinese Jewelry logo" />
-          </div>
+          <Link link to="/" className="logo">
+            LG
+          </Link>
 
           <button
             className={`mobile-menu-bars ${navOpen ? "menu-open" : ""}`}
@@ -66,9 +66,9 @@ const Topnav = () => {
 
         {/* destop menu  */}
         <div className="desktop-container">
-          <div className="logo">
-            <img src="images/logo-large.png" alt="LaGravinese Jewelry logo" />
-          </div>
+          <Link to="/" className="logo">
+            LaGravinese
+          </Link>
 
           <ul className="main-links">
             {navLinks.map((link) => (

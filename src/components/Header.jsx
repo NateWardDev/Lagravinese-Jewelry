@@ -7,8 +7,6 @@ const Header = () => {
   const headerItem = headerData.find((item) => item.path === pathname);
   if (!headerItem) return null; // if nothing is found render nothing
 
-  console.log(headerItem);
-
   return (
     <header className={headerItem.name}>
       <div className="imgs-container">

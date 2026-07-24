@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="sticky-container">
         <div className="sticky-area">
           {footerData.map((section) => (
-            <div key={section.type} className={section.className}>
+            <div key={section.id} className={section.className}>
               {section.id === "navigation" && (
                 <>
                   <h3>{section.heading}</h3>

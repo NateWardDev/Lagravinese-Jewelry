@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router";
 import "./styles/reset.scss";
 import "./styles/main.scss";
+import "./styles/font-sizes.scss";
 import { Routes, Route, BrowserRouter } from "react-router";
 import OurWorkPage from "./pages/OurWorkPage";
 import HomePage from "./pages/HomePage";

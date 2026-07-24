@@ -13,19 +13,8 @@
   --box-shadow: rgba(76, 76, 76, 0.2) 0px 8px 24px;
 }
 
-h2 {
-  font-size: 3rem;
-}
-h3,
-.faq button {
-  font-size: 2rem;
-}
-h4 {
-  font-size: 1.75rem;
-}
 .page-link {
   box-shadow: var(--box-shadow);
-  font-size: 1.25rem;
   color: var(--white);
   border-radius: var(--border-rad);
   padding: 0.4rem 1.4rem;
@@ -42,11 +31,6 @@ h4 {
       color: var(--white);
     }
   }
-}
-a,
-p,
-a i {
-  font-size: 1.5rem;
 }
 
 body {
@@ -86,15 +70,7 @@ body {
   transition: var(--transition-25);
   a,
   p {
-    font-size: 1.1rem;
     color: var(--white);
-    transition: var(--transition-25);
-  }
-  svg {
-    font-size: 1.5rem;
-  }
-  .logo {
-    filter: invert(1);
     transition: var(--transition-25);
   }
   .mobile-container {
@@ -199,7 +175,6 @@ body {
       align-items: center;
       justify-content: center;
       width: 150px;
-      font-size: 1.5rem;
     }
     .social-links {
       gap: 2rem;
@@ -293,7 +268,6 @@ body {
     gap: 5rem;
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
     color: var(--white);
     ul {
       display: flex;
@@ -425,17 +399,11 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    width: 100%;
+    padding: 0.5rem;
     text-align: center;
     color: var(--white);
     text-shadow: 0 4px 16px #00000081;
-    h1 {
-      font-size: 8rem;
-      line-height: 6rem;
-    }
-    h2 {
-      font-size: 4rem;
-      line-height: 5rem;
-    }
   }
   &.journey,
   &.work,
@@ -447,16 +415,6 @@ header {
         &:last-child {
           display: none;
         }
-      }
-    }
-    .text-wrapper {
-      h1 {
-        font-size: 6rem;
-        line-height: 6rem;
-      }
-      h2 {
-        font-size: 3rem;
-        line-height: 5rem;
       }
     }
   }
@@ -540,7 +498,6 @@ header {
         transition: var(--transition-25);
       }
       svg {
-        font-size: 2rem;
         position: absolute;
         top: 55%;
         left: 55%;
@@ -1034,7 +991,6 @@ footer {
         }
 
         svg {
-          font-size: 1.75rem;
           transition: var(--transition-25);
 
           &:hover {
